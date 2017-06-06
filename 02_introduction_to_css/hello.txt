@@ -1,0 +1,7 @@
+css notes
+
+rule{
+	poperty:value;
+	}
+
+	q2nyc17
