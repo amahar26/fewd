@@ -1,6 +1,36 @@
 body {
-  background: #ccc none repeat scroll 0 0;
   text-align: center;
+  color:#555;
+  font-family: arial, helvetica, sans-serif;
+  margin: 0px;
+}
+
+code{
+
+	  background: #ccc none repeat scroll 0 0;
+
+}
+
+h1{
+	color:red;
+
+}
+h2{
+	color:#000;
+
+}
+a{
+	text-decoration: none;
+	color:red;
+
+}
+.announcement{
+	background:#fff;
+	padding: 15px 0px;
+}
+.announcement a{
+	color:#000;
+
 }
 
 li {
