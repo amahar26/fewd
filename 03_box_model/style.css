@@ -10,13 +10,26 @@ code{
 	  background: #ccc none repeat scroll 0 0;
 	  padding:0 12px;
 }
-h2,
-h1{
-	color:red;
-	padding:12px 0px 12px 6px;
-	background-color: lightgrey;
-	margin-bottom: 12px;
+nav ul li{
+	display: inline;
+	background-color: red;
+	margin-right: 30px;
+	padding:10px ;
+
 }
+nav ul {
+	padding: 0;
+	text-align: center;
+
+}
+h2, h1 {
+  background-color: lightgrey;
+  color: red;
+  margin: auto;
+  max-width: 400px;
+  padding: 12px 0 12px 6px;
+}
+
 h2{color:#000;}
 
 ul li, ol li{
