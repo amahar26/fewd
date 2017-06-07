@@ -29,6 +29,7 @@ ul li  a {
   background: #ccc none repeat scroll 0 0;
   border-radius: 20px;
   padding: 10px;
+  color: #555;
 }
 
 .main-sec {
@@ -45,6 +46,15 @@ ul li  a {
   float: left;
 }
 
+.projects > li {
+  display: block;
+  margin: 20px 0;
+}
+
+.projects img {
+  max-width: 400px;
+  width: 100%;
+}
 
 .abt-img img {
   border-radius: 40px;
