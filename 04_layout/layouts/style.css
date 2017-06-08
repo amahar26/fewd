@@ -22,10 +22,14 @@ section {
 
 .red {
   background: firebrick;
+  width:50%;
+  float:left;
 }
 
 .blue {
   background: navy;
+   width:50%;
+   float:left;
 }
 
 .orange {
