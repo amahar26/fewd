@@ -1,7 +1,7 @@
 
-html {
-  background: #ccc;
-}
+html { background: #ccc;}
+
+h1,h2, p{color:white;}
 
 body{
 font-family:arial,helvetica, sans-serif;

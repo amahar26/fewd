@@ -1,0 +1,41 @@
+body {
+  color: white;
+  font-family: Arial;
+  font-size: 24px;
+}
+
+section {
+  padding: 100px;
+}
+
+.two-columns {
+  background: slategray;
+}
+
+.three-columns {
+  background: lightgray;
+}
+
+.color {
+  height: 200px;
+}
+
+.red {
+  background: firebrick;
+}
+
+.blue {
+  background: navy;
+}
+
+.orange {
+  background: orange;
+}
+
+.yellow {
+  background: gold;
+}
+
+.green {
+  background: forestgreen;
+}
