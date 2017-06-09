@@ -10,12 +10,23 @@ section {
 
 .two-columns {
   background: slategray;
+  overflow: auto;
 }
+
 
 .three-columns {
   background: lightgray;
 }
 
+.three-columns:after {
+  content:"";
+  display: table;
+  clear: both;
+}
+.four-columns {
+  background: lightgray;
+    overflow: auto;
+}
 .color {
   height: 200px;
 }
@@ -34,12 +45,45 @@ section {
 
 .orange {
   background: orange;
+   width:33%;
+   float:left;
 }
 
 .yellow {
   background: gold;
+  width:33%;
+  float:left;
 }
 
 .green {
   background: forestgreen;
+  width:33%;
+  float:left;
 }
+
+
+
+.pink {
+  background: pink;
+  float: left;
+  width: 25%;
+}
+
+.dark-blue {
+  background: darkblue;
+   width:25%;
+   float:left;
+}
+
+.lavender {
+  background: plum;
+  width:25%;
+  float:left;
+}
+
+.turquoise{
+  background: darkturquoise;
+  width:25%;
+  float:left;
+}
+
