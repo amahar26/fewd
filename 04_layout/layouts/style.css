@@ -24,6 +24,10 @@ section {
   clear: both;
 }
 .four-columns {
+  background: slategray;
+    overflow: auto;
+}
+.five-columns {
   background: lightgray;
     overflow: auto;
 }
@@ -45,19 +49,19 @@ section {
 
 .orange {
   background: orange;
-   width:33%;
+   width:33.333333%;
    float:left;
 }
 
 .yellow {
   background: gold;
-  width:33%;
+  width:33.333333%;
   float:left;
 }
 
 .green {
   background: forestgreen;
-  width:33%;
+  width:33.333333%;
   float:left;
 }
 
@@ -84,6 +88,31 @@ section {
 .turquoise{
   background: darkturquoise;
   width:25%;
+  float:left;
+}
+
+
+.one {
+  background: pink;
+  float: left;
+  width: 50%;
+}
+
+.two {
+  background: darkblue;
+   width:50%;
+   float:left;
+}
+
+.three {
+  background: plum;
+  width:50%;
+  float:left;
+}
+
+.four{
+  background: darkturquoise;
+  width:50%;
   float:left;
 }
 
