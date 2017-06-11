@@ -1,0 +1,144 @@
+body{
+  font-family: "Open Sans",sans-serif;
+  font-size: 24px;
+
+}
+
+header {
+  background: rgba(0, 0, 0, 0) url("../images/header_bg.jpg") repeat scroll 0 0 / cover ;
+  color: white;
+  height: 400px;
+  padding: 100px;
+}
+
+header h1{
+  font-weight:bold;
+  font-size:60px;
+  margin-bottom: 24px;
+
+}
+header h2 {
+  font-size: 60px;
+  margin-bottom: 48px;
+  margin-top: 48px;
+  text-align: center;
+}
+header button {
+  background-color: gold;
+  color: midnightblue;
+  display: block;
+  margin: 24px auto;
+}
+button {
+  border: medium none;
+  border-radius: 6px;
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-weight: bold;
+  padding: 12px 48px;
+}
+
+.graphic {
+  float: left;
+  text-align: center;
+  width: 33%;
+}
+
+.graphic p {
+  margin-bottom: 24px;
+  margin-top: 24px;
+}
+
+#value-proposition {
+  background: midnightblue none repeat scroll 0 0;
+  color: white;
+  padding: 100px;
+  overflow: auto;
+}
+
+#benefits {
+  height: 400px;
+  background-color: white;
+  padding:100px;
+}
+
+#benefits h2 {
+  color: midnightblue;
+  font-size: 48px;
+  margin-bottom: 24px;
+}
+
+#benefits p {
+  margin-bottom: 48px;
+}
+#benefits ul {
+  list-style: outside none disc;
+  padding-left: 24px;
+}
+#benefits ul li {
+margin-bottom:12px;
+
+}
+.benefits-today, .benefits-future {
+  float: left;
+  width: 50%;
+}
+.benefits-today p, .benefits-future p{
+  font-weight: bold;
+}
+#testimonial {
+  background: rgba(0, 0, 0, 0) url("../images/testimonial_bg.jpg") repeat scroll 0 0 / cover ;
+  color: white;
+  padding: 100px;
+}
+.testimonial-quote {
+  font-size: 48px;
+  font-style: italic;
+  margin: 0 auto 24px;
+  text-align: center;
+  width: 800px;
+}
+.testimonial-author {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0 auto;
+  text-align: center;
+  width: 800px;
+}
+
+aside {
+  background-color: gold;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+aside button {
+  background: midnightblue none repeat scroll 0 0;
+  color: white;
+  display: block;
+  margin: 0 auto;
+}
+footer {
+  background-color: black;
+  color: white;
+  padding: 50px 100px 10px;
+}
+footer h2 {
+  color: gold;
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 48px;
+  text-align: center;
+}
+.footer-links {
+  margin-bottom: 48px;
+  text-align: center;
+}
+.footer-links a {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+.footer-copyright {
+  font-size: 16px;
+  text-align: center;
+}
+

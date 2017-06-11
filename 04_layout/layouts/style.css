@@ -36,9 +36,11 @@ section {
 }
 
 .red {
-  background: firebrick;
-  width:50%;
-  float:left;
+    background: firebrick none repeat scroll 0 0;
+    float: left;
+    width: 50%;
+    padding:10px;
+    box-sizing: border-box;
 }
 
 .blue {
