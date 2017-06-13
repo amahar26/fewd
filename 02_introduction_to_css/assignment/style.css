@@ -1,11 +1,16 @@
 
 html { background: #ccc;}
 
-h1,h2, p{color:white;}
+h1, h2, p {color: #555;}
 
-body{
-font-family:arial,helvetica, sans-serif;
+h1{background: indianred;color:white;text-transform:uppercase;}
 
+p{line-height: 25px}
+
+body {
+  background-image: url("./images/climpek.png");
+  font-family: arial,helvetica,sans-serif;
+  margin: 0;
 }
 
 
@@ -14,31 +19,43 @@ ul {
   padding: 0;
   width:100%;
   display:table;
+  margin:0;
 }
 
-ul li {
-  
-  
+ul li { 
   display: table-cell;
-  
   text-align: center;
+  width:50%;
 }
 
-ul li  a {
+ul li a {
+  color: white;
+  display: block;
   text-decoration: none;
-  background: #ccc none repeat scroll 0 0;
-  border-radius: 20px;
-  padding: 10px;
-  color: #555;
+  text-transform: uppercase;
+  width: 100%;
 }
 
+section{
+  box-sizing: border-box;
+  max-width: 900px;
+  background-color: lightsalmon;
+  margin:0 auto;
+  overflow: auto;
+
+}
 .main-sec {
+  background: rgba(255, 255, 255, 0.3) none repeat scroll 0 0;
+  box-sizing: border-box;
   clear: both;
   margin: auto;
-  max-width: 700px;
-  background: #555;
-  padding: 25px;
-  min-height: 200px;
+  max-width: 900px;
+  min-height: 100vh;
+  padding: 25px 0;
+}
+
+.main-sec p{
+  padding: 20px
 }
 
 .abt-img {
@@ -49,10 +66,13 @@ ul li  a {
 .projects > li {
   display: block;
   margin: 20px 0;
+  width: 100%;
 }
-
-.projects img {
+.portfolio {
+  margin: auto;
   max-width: 400px;
+}
+.projects img {
   width: 100%;
 }
 
@@ -65,6 +85,8 @@ ul li  a {
 }
 @media screen and (max-width: 700px){
 
+
+
 .abt-img {
   width: 100%;
   float: none;
@@ -73,4 +95,17 @@ ul li  a {
 	clear:both;
 
 }
+
+
 }
+
+
+@media screen and (max-width: 500px){
+
+ul li{
+  width:100%;
+  display: block;
+}
+
+}
+
