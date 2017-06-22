@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+}
+
+p{
+	font-family: arial, sans-serif;
+	font-size:15px;
+	line-height: 25px;
+	font-style: normal;
+	font-weight: normal;
+}
+h1, h2, h3, h4, h5, h6{
+
+	font-family: georgia, sans-serif;
+	font-style: normal;
+}
+
+button {
+  background: #ccc none repeat scroll 0 0;
+  border: medium none;
+  border-radius: 6px;
+  font-family: impact,sans-serif;
+  font-size: 20px;
+  margin: 0 4% 0 0;
+  padding: 10px;
+  text-transform: uppercase;
+  width: 96%;
+  box-shadow: 0 3px 0 #aaa;
+}
+
+header{
+background-color: #000;
+overflow: auto;
+
+}
+header h2{
+	display: inline;
+  	float: left;
+	font-size:20px;
+	margin:15px;
+}
+header h2 a {
+  color:yellow;
+  text-decoration: none;
+  font-family: georgia, serif;
+}
+
+header nav {
+  float: right;
+}
+nav {
+    width: 100%;
+    max-width:200px;
+    max-width: 600px;
+}
+.primary-navigation li {
+  font-family: impact,sans-serif;
+  font-size: 18px;
+}
+.primary-navigation a{
+	text-transform: uppercase;
+
+}
+
+
+.primary-navigation a, .secondary-navigation li{
+  color: #fff;
+  display: inline;
+  float: left;
+  text-decoration: none;
+  padding:20px 10px 10px;
+}
+
+section {
+  background-color: lightgray;
+  text-align: center;
+  font-size: 28px;
+  padding: 10px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+  color: gray;
+}
+.underline {
+  border-bottom: 2px solid yellow;
+}
+
+.hero {
+  background-image: url("../images/coworking.jpg");
+  background-size: cover;
+  min-height: 80vh;
+}
+
+.sign-up-call-to-action {
+  background: rgba(255, 255, 255, 0.7) none repeat scroll 0 0;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 4px #000;
+  float: right;
+  max-width: 242px;
+  padding: 24px;
+}
+
+.sign-up-call-to-action > p {
+  text-align: left;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.sign-up-call-to-action  h1 {
+  font-family: helvetica,sr,sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+}
+.sign-up-call-to-action > button {
+  background: yellow none repeat scroll 0 0;
+  border: medium none;
+  border-radius: 5px;
+  display: block;
+  font-family: impact ,sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  margin: 1%;
+  padding: 8px;
+  text-transform: uppercase;
+  width: 98%;
+}
+.info-boxes{
+	background-color:#fff;
+	overflow: auto; 
+
+
+}
+.info-box {
+  width: 30%;
+  float: left;
+  border-left:1px solid #ccc;
+  padding-left: 10px
+}
+.info-box:first-child{
+	border-left: none;
+}
+.info-box p, .info-box h2{
+
+	text-align: left;
+}
+
+footer {
+  background-color: #000;
+  
+}
+
+footer p{
+	color:#fff;
+	padding: 10px;
+	
+}
