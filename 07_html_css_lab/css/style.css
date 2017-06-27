@@ -21,18 +21,22 @@ button {
   border-radius: 6px;
   font-family: impact,sans-serif;
   font-size: 20px;
-  margin: 0 4% 0 0;
+  margin: 35px 4% 0 0;
   padding: 10px;
   text-transform: uppercase;
   width: 96%;
   box-shadow: 0 3px 0 #aaa;
+
 }
 
 header{
 background-color: #000;
 overflow: auto;
 
+
 }
+
+
 header h2{
 	display: inline;
   	float: left;
@@ -43,6 +47,8 @@ header h2 a {
   color:yellow;
   text-decoration: none;
   font-family: georgia, serif;
+  font-size:25px;
+
 }
 
 header nav {
@@ -52,14 +58,6 @@ nav {
     width: 100%;
     max-width:200px;
     max-width: 600px;
-}
-.primary-navigation li {
-  font-family: impact,sans-serif;
-  font-size: 18px;
-}
-.primary-navigation a{
-	text-transform: uppercase;
-
 }
 
 
@@ -71,6 +69,21 @@ nav {
   padding:20px 10px 10px;
 }
 
+.primary-navigation li {
+  font-family: impact,sans-serif;
+  font-size: 18px;
+}
+
+.secondary-navigation > li {
+  font-family: arial,sans-serif;
+  font-weight: normal;
+}
+
+.primary-navigation a{
+	text-transform: uppercase;
+
+}
+
 section {
   background-color: lightgray;
   text-align: center;
@@ -78,6 +91,10 @@ section {
   padding: 10px;
   font-style: italic;
   font-weight: bold;
+
+}
+section.developers, section.designers {
+  min-height: 83vh;
 }
 
 .strikethrough {
@@ -91,13 +108,17 @@ section {
 .hero {
   background-image: url("../images/coworking.jpg");
   background-size: cover;
-  min-height: 80vh;
+  background-position: center;
+}
+.hero:after{
+content: "";
+  display: table;
+  clear: both;
 }
 
 .sign-up-call-to-action {
   background: rgba(255, 255, 255, 0.7) none repeat scroll 0 0;
-  border: 1px solid #ccc;
-  box-shadow: 0 4px 4px #000;
+  box-shadow: 0 1px 2px #000;
   float: right;
   max-width: 242px;
   padding: 24px;
@@ -105,16 +126,17 @@ section {
 
 .sign-up-call-to-action > p {
   text-align: left;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 26px;
 }
 
-.sign-up-call-to-action  h1 {
-  font-family: helvetica,sr,sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-  text-align: left;
+.sign-up-call-to-action h1 {
+	font-family: arial, sans-serif;
+	font-size: 23px;
+	font-weight: bold;
+	text-align: left;
 }
+
 .sign-up-call-to-action > button {
   background: yellow none repeat scroll 0 0;
   border: medium none;
@@ -123,11 +145,11 @@ section {
   font-family: impact ,sans-serif;
   font-size: 17px;
   font-weight: bold;
-  margin: 1%;
   padding: 8px;
   text-transform: uppercase;
-  width: 98%;
+  box-shadow: 0 3px 0 goldenrod;
 }
+
 .info-boxes{
 	background-color:#fff;
 	overflow: auto; 
@@ -135,10 +157,11 @@ section {
 
 }
 .info-box {
-  width: 30%;
+  width: 31.3333%;
   float: left;
   border-left:1px solid #ccc;
-  padding-left: 10px
+  padding-left: 10px;
+  margin-bottom:25px;
 }
 .info-box:first-child{
 	border-left: none;
@@ -147,6 +170,85 @@ section {
 
 	text-align: left;
 }
+.info-box p{
+	margin-right: 20px;
+}
+.info-box h2 {
+	margin: 10px 0;
+	font-size: 23px;
+}
+
+
+
+
+/**** Developer, Designer  Page ********/
+
+
+.developer, .designer {
+  float: left;
+  margin: 1%;
+  width: 23%;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.developers:after, .designers:after{
+
+content: "";
+  display: table;
+  clear: both;
+
+}
+.developer ul, .designer ul {
+	width: 100%
+}
+.developer img, .designer img  {
+  width: 100%;
+}
+
+.developer li, .designer li {
+  float: left;
+  text-align: center;
+  background: #aaa;
+  color: #fff;
+  font-family: arial;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  margin-right: 6px;
+  padding: 7px;
+  border-radius: 14px;
+  margin-top: 0.2rem;
+}
+.developer ul:after, .designer ul:after {
+content: "";
+  display: table;
+  clear: both;
+}
+.developer a, .designer a {
+  background: yellow none repeat scroll 0 0;
+  box-shadow: 0 3px 0 goldenrod;
+  border-radius: 7px;
+  box-sizing: border-box;
+  color: #000;
+  display: block;
+  font-family: impact,sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  margin-top: 10px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.developer p, .developer a, .designer p, .designer a{
+	text-align: left;
+}
+
+/****** Footer ******/
+
 
 footer {
   background-color: #000;
@@ -157,4 +259,73 @@ footer p{
 	color:#fff;
 	padding: 10px;
 	
+}
+
+@media screen and (max-width: 800px) {
+
+header h2 {
+  text-align: center;
+  display: block;
+  float: none;
+}
+
+.developer, .designer {
+  width: 46%;
+  margin: 2%;
+}
+
+}
+@media screen and (max-width: 600px) {
+
+.primary-navigation {
+  display: block;
+  margin: auto;
+  max-width: 280px;
+  float: none;
+}
+.secondary-navigation {
+  clear: both;
+  max-width: 255px;
+  margin: auto;
+}
+.primary-navigation a, .secondary-navigation li {
+  padding: 7px 10px 10px;
+}
+
+
+.info-box {
+  width: 100%;
+   border-left: medium none;
+   border-bottom: 1px solid #ccc;
+   padding-left: 0px
+}
+.info-box:last-child{
+	border-bottom:none;
+}
+.info-box p, .info-box h2 {
+  text-align: center;
+}
+.info-box  button {
+  float: none;
+  font-family: impact,sans-serif;
+  font-size: 17px;
+  margin: 13px 0 10px;
+  padding: 10px;
+  text-transform: uppercase;
+  width: 200px;
+}
+
+.developer, .designer {
+  width: 96%;margin:2%;
+}
+
+}
+
+
+@media screen and (max-width: 350px) {
+.sign-up-call-to-action {
+  float: none;
+  margin: auto;
+}
+
 }
