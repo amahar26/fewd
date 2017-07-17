@@ -10,10 +10,11 @@
     <h1>Trillo</h1>
     <p><i>A WHAM Product</i></p>
 
-    <div id="new-item">
-      <input id="new-item-text" type="text" placeholder="What do you need to do?"/>
-      <button id="new-item-button">Add item</button>
-    </div>
+    
+    <form id="new-item">
+      <input name="new-item-text" id="new-item-text" type="text" placeholder="What do you need to do?"/>
+      <input type="button" onclick="addItem()" id="new-item-button"  value="Add item"/> 
+    </form>
 
     <div id="todo-column" class="column">
       <h2 class="column-heading">To Do</h2>
@@ -24,5 +25,10 @@
       <h2 class="column-heading">Done</h2>
       <ul class="item-list"></ul>
     </div>
+    <script type="text/javascript">
+      
+
+
+    </script>
   </body>
 </html>
