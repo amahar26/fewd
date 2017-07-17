@@ -22,7 +22,8 @@ $( document ).ready(function() {
 
 	var renderAllItems = function(itemsToRender) {	
 		for(var i = 0; i < items.length; i++) {
-	 		 $("<li class='item todo'> <p>" + items[i] + "</p><span class='label'>Mark as Done</span></li>").appendTo("#todo-column .item-list");
+	 		 $("<li class='item todo'> <p>" + items[i] + "</p><span class='label' id='label"+ items.indexOf(items[i]) +"'>Mark as Done</span></li>").appendTo("#todo-column .item-list");
+
 			}
 	};	
 
@@ -34,6 +35,15 @@ $( document ).ready(function() {
 		
 		};
 
+	// Render new items
+
+	var moveitem = function(item) {
+		
+		
+			alert("<span>")
+		
+		};	
+
 	renderAllItems();
 
 
@@ -43,6 +53,15 @@ $( document ).ready(function() {
 
 		addNewItem();
 	});
+
+	// Mark Item as Done
+
+	$(".todo .label").click(function(){
+		moveitem();
+
+	});
+
+
 });
 
 
