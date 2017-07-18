@@ -1,4 +1,4 @@
-//definitly did this all wrong but it seems to be working 
+//definitly did this all wrong but it seems to be working somewhat
 
 
 
