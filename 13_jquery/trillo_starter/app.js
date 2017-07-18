@@ -5,44 +5,60 @@ var items = [
   "Write blog post about selfies"
 ];
 
-
-
 function addItem(){
+
+	//get input value
 	var newItem = document.getElementById("new-item-text").value;
+
+	//add to array
 	items.push(newItem);
+
+	//reset input
 	document.getElementById("new-item-text").value = "";
 	
 }
 
 
-$( document ).ready(function() {
 
+
+
+$( document ).ready(function() {
 
 	// Render Starting items
 
 	var renderAllItems = function(itemsToRender) {	
-		for(var i = 0; i < items.length; i++) {
-	 		 $("<li class='item todo'> <p>" + items[i] + "</p><span class='label' id='label"+ items.indexOf(items[i]) +"'>Mark as Done</span></li>").appendTo("#todo-column .item-list");
+		for(var i = 0; i < items.length-1; i++) {
+	 		 $("<li class='item todo' id='label"+ items.indexOf(items[i]) +"'> <p>" + items[i] + "</p><span class='label' id='label"+ items.indexOf(items[i]) +"'>Mark as Done</span></li>").appendTo("#todo-column .item-list");
 
 			}
+		addNewItem();
+	};
+
+
+	// Render new items
+
+	var addNewItem = function(newItem) {
+		$("<li class='item todo' id='label"+ items.indexOf(items[items.length - 1]) +"'> <p>" + items[ items.length - 1] + "</p><span class='label' id='label"+ items.indexOf(items[items.length - 1]) +"'>Mark as Done</span></li>").prependTo("#todo-column .item-list");
+		$(".todo .label").click(function(){
+			var itemId = $(this).attr("id");
+			var addLi = "li#" + itemId + " p" ;
+			var doneClass = "#" +itemId + ".todo"
+			var getItem = $(addLi).html();
+
+			
+				
+			$(doneClass).remove();
+			$("<li class='item done'> <p>" + getItem + "</p><span class='label'>Remove</span></li>").prependTo("#done-column .item-list");
+				
+		});
+		
+	};
+
+	// Render new items
+
+	var moveitem = function(doneClass) {
+		
 	};	
-
-	// Render new items
-
-	var addNewItem = function(item) {
-		
-	 		$("<li class='item todo'> <p>" + items[ items.length - 1] + "</p><span class='label'>Mark as Done</span></li>").prependTo("#todo-column .item-list");
-		
-		};
-
-	// Render new items
-
-	var moveitem = function(item) {
-		
-		
-			alert("<span>")
-		
-		};	
 
 	renderAllItems();
 
@@ -56,30 +72,9 @@ $( document ).ready(function() {
 
 	// Mark Item as Done
 
-	$(".todo .label").click(function(){
-		moveitem();
-
-	});
-
+	
 
 });
-
-
-
-
-
-// Should build the following HTML structure for a done item:
-// <li class="item done">
-// 	<p>Learn JavaScript</p>
-// 	<span class="label">Remove</span>
-// </li>
-
-
-
-
-
-
-
 
 
 
@@ -117,4 +112,3 @@ var removeItem = function(itemNumber) {};
 // Mark a single item as Done
 
 var markAsDone = function(itemNumber) {};
-
