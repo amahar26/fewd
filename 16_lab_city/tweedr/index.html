@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tweedr</title>
+  </head>
+  <body>
+    <header>
+      <h1>Tweedr</h1>
+
+      <nav class="navigation">
+        <img class="navigation-icon" src="images/hamburger.png" alt="navigation icon">
+        <ul class="navigation-items">
+          <li class="navigation-item">Home</li>
+          <li class="navigation-item">About</li>
+          <li class="navigation-item">Blog</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="profile">
+        <div class="profile-picture">
+          <img src="http://placecage.com/300/300" alt="">
+        </div>
+
+        <div class="new-tweed">
+          <textarea rows="3" class="new-tweed-text" placeholder="What do you want to tweed about?"></textarea>
+          <button class="new-tweed-button">Tweed It!</button>
+        </div>
+      </section>
+
+      <section class="activity">
+        <ul class="tweeds">
+          <div class="tweed">
+            <span>&times;</span>
+            <p class="tweed-text">Bought a lamp today.</p>
+          </div>
+          <div class="tweed">
+            <span>&times;</span>
+            <p class="tweed-text">Why are iguanas green?</p>
+          </div>
+          <div class="tweed">
+            <span>&times;</span>
+            <p class="tweed-text">Hello world. I've joined Tweedr</p>
+          </div>
+        </ul>
+      </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
