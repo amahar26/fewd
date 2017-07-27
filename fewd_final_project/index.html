@@ -10,6 +10,7 @@
 
 </head>
 <body>
+	<div class="loader"></div>
 	<header class="full-width">
 		<a class="logo " href="/index"><img src="./imgs/mg-logo.svg" alt="amanda harris design portfolo logo image" /></a>
 		<nav>
@@ -31,6 +32,11 @@
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".loader").fadeOut("slow");
+			})
+	</script>
 	<script src="./js/app.js"></script>
 
 </body>
