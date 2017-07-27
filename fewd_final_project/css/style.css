@@ -1,16 +1,30 @@
+/********* Master Styles *******/
+section {
+  padding-bottom:500px;
+}
+
+.full-width {
+  padding: 4em 1em;
+  margin: 0 auto;
+  max-width: 95%;
+}
+
+p {
+  clear: both;
+}
+
+
+/************ Header *************/
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
-.full-width {
-  padding: 4em 1em;
-  margin: 0 auto;
-  max-width: 95%;
-}
-section {
-  padding-bottom:500px;
+nav a {
+  color: #555;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 nav ul {
   display: flex;
@@ -18,9 +32,9 @@ nav ul {
   width: 250px;
   padding: 0;
 }
-p {
-  clear: both;
-}
+
+
+
 .reveal-test{
 	height:200px;
 	max-width:700px;
