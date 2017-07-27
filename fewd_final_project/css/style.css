@@ -1,18 +1,23 @@
-.wrapper{
-	padding-bottom:500px;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
-
-
-.nav{
-	padding:100px 0;
+.full-width {
+  padding: 4em 1em;
+  margin: 0 auto;
+  max-width: 95%;
 }
-
 section {
-  float: left;
-  padding-right:10px;
-   visibility: hidden;
+  padding-bottom:500px;
 }
-
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+  padding: 0;
+}
 p {
   clear: both;
 }
