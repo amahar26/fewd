@@ -34,7 +34,10 @@ section {
 p {
   clear: both;
 }
+h1 {
+  font-size: 3em;
 
+}
 
 /************ Header *************/
 header {

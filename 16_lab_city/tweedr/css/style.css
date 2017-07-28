@@ -27,6 +27,21 @@ header {
 .navigation-icon {
   width: 40px;
 }
+.navigation-items{
+padding: 0;
+list-style: none;
+
+}
+
+.navigation-enabled .navigation-items{
+  position: absolute;
+  display: block;
+  right: 0;
+  top: 20px;
+  background-color: #555;
+  z-index: 9;
+}
+
 
 main {
   max-width: 960px;
@@ -37,10 +52,12 @@ main {
 
 .navigation-items {
   display: none;
+
 }
 
 nav{
   flex-direction: row-reverse;
+  position: relative;
 }
 main {
    display: flex;

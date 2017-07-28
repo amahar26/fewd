@@ -4,6 +4,23 @@ a=a||3;e=e||"";return function(f,k){var u=0>f,c=Math.floor((u?-1:1)*f).toString(
 if(b.numberStep){var c=this.each(function(){this._animateNumberSetter=b.numberStep}),n=a.complete;a.complete=function(){c.each(function(){delete this._animateNumberSetter});n&&n.apply(this,arguments)}}return e.animate.apply(e,f)}})(jQuery);
 
 
+
+//	var myCounter = 0;
+//	setInterval(function () {
+
+//  if (myCounter == 1985){
+//    $("#counter-test").html("1985");
+//  }else{
+//	$("#counter-test").html(myCounter++) ;
+// 	}
+// }, 1);
+
+
+
+
+
+
+
 $("#year").animateNumber({ number: 1985 }, 2000);
 
 

@@ -27,21 +27,20 @@ $(".new-tweed-button").click(function(){
 
 });
 
-$(".new-tweed-text").keypress(function(event) { 
+$(".new-tweed-text").on("input", function(event) { 
+
  	var userInput = $(".new-tweed-text").val();  
- 	if (userInput.length > 5) {    
- 		event.preventDefault();  
- 	} 
+ 	var trimmedInput = userInput.substring(0, 10);
+	$(".new-tweed-text").val(trimmedInput);
+ 
+ 	var remaingChars = 10 - trimmedInput.length;
+ 	$(".remaining-amt").html(remaingChars);
+
+
 });
 
 $(".navigation-icon").click(function(){
-	console.log("working");
-
-	if( $(".navigation").hasClass("navigation-enabled") ){
-	 $(".navigation").removeClass("navigation-enabled")
-	}else{	
-		$(".navigation").addClass("navigation-enabled")
-	}
-	
+	var navi = $(".navigation"); 
+	navi.toggleClass("navigation-enabled"); 
 
 });
