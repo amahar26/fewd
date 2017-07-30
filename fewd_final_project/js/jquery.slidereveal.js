@@ -85,7 +85,7 @@
 
       if (setting.push){
         $(".home").css({
-          position: "relative",
+          position: "fixed",
           "overflow-x": "hidden",
           transition: transition,
           left: "0px"
