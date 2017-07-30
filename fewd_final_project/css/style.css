@@ -46,20 +46,24 @@ h1 {
 /************ Header *************/
 header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
 nav a {
-  color: #555;
+  color: #000;
+  font-weight: 300;
   text-decoration: none;
   text-transform: uppercase;
 }
+
 nav ul {
   display: flex;
   justify-content: space-between;
   width: 250px;
   padding: 0;
+}
+.logo{
+  padding-right: 10px;
 }
 .logo img{
   width:100%;

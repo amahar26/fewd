@@ -15,10 +15,15 @@ if(b.numberStep){var c=this.each(function(){this._animateNumberSetter=b.numberSt
 // 	}
 // }, 1);
 
-
+$('.sec2').click(function(){
+	//alert("working");
+	$("body").toggleClass("active");
+})
 $('.work').slideReveal({
   trigger: $(".sec2")
+  
 });
+
 
 
 

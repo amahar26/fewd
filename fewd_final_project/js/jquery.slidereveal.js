@@ -132,9 +132,9 @@
       $el.css(setting.position, "0px");
       if (setting.push) {
         if (setting.position === "left") {
-          $(".home").css("left", sidePosition($el));
+          $(".home").css("left", "100vw");
         } else {
-          $(".home").css("left", "-" + sidePosition($el));
+          $(".home").css("left", "-" + "100vw");
         }
       }
       $el.data("slide-reveal", true);
