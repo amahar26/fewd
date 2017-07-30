@@ -52,7 +52,7 @@
 
       var transition = "all ease " + setting.speed + "ms";
       $el.css({
-        position: "absolute",
+        position: "fixed",
         width: setting.width,
         transition: transition,
         height: "100%",
@@ -132,9 +132,9 @@
       $el.css(setting.position, "0px");
       if (setting.push) {
         if (setting.position === "left") {
-          $(".home").css("left", "100vw");
+          $(".home").css("left", sidePosition($el));
         } else {
-          $(".home").css("left", "-" + "100vw");
+          $(".home").css("left", "-" + sidePosition($el));
         }
       }
       $el.data("slide-reveal", true);
@@ -223,3 +223,4 @@
   };
 
 }(jQuery));
+

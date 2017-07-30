@@ -50,12 +50,10 @@ header {
   flex-wrap: wrap;
 }
 nav a {
-  color: #000;
-  font-weight: 300;
+  color: #555;
   text-decoration: none;
   text-transform: uppercase;
 }
-
 nav ul {
   display: flex;
   justify-content: space-between;
