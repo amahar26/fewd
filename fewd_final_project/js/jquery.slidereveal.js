@@ -30,7 +30,7 @@
       shown: function(){},
       hidden: function(){},
       hide: function(){},
-      top: 300,
+      top: 200,
       overlay: false,
       "zIndex": 1049,
       overlayColor: 'rgba(0,0,0,0.5)'
@@ -52,7 +52,7 @@
 
       var transition = "all ease " + setting.speed + "ms";
       $el.css({
-        position: "fixed",
+        position: "absolute",
         width: setting.width,
         transition: transition,
         height: "100%",
