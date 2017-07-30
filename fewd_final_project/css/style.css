@@ -20,10 +20,10 @@
   background: url('../imgs/page-loader.gif') 50% 50% no-repeat;
 }
 
-/********* Master Styles *******/
+/********* Master Styles *****
 section {
   padding-bottom:500px;
-}
+}**/
 body{
   width:100vw;
   overflow: hidden;
