@@ -30,7 +30,7 @@
       shown: function(){},
       hidden: function(){},
       hide: function(){},
-      top: 0,
+      top: 300,
       overlay: false,
       "zIndex": 1049,
       overlayColor: 'rgba(0,0,0,0.5)'
@@ -52,7 +52,7 @@
 
       var transition = "all ease " + setting.speed + "ms";
       $el.css({
-        position: "relative",
+        position: "fixed",
         width: setting.width,
         transition: transition,
         height: "100%",
@@ -66,7 +66,7 @@
         self.overlayElement = $("<div class='slide-reveal-overlay'></div>")
         .hide()
         .css({
-          position: 'fixed',
+          position: 'relative',
           top: 0,
           left: 0,
           height: '100%',
@@ -85,7 +85,7 @@
 
       if (setting.push){
         $(".home").css({
-          position: "fixed",
+          position: "relative",
           "overflow-x": "hidden",
           transition: transition,
           left: "0px"
