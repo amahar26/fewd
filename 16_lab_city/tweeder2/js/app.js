@@ -8,6 +8,9 @@ $(".new-tweed-button").click(function() {
   }
 
   $(".new-tweed-text").val("");
+
+  $("tweed").length
+
 });
 
 var createTweed = function(text) {
@@ -43,11 +46,11 @@ $(".navigation-icon").click(function() {
   navigation.toggleClass("navigation-enabled");
 });
 
-$("span").click(function(){
+//$("span").click(function(){
 
  // $(this).closest(".tweed").remove();
-  console.log("clicked");
-});
+ // console.log("clicked");
+//});
 
 
 
