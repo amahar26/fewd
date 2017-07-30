@@ -45,7 +45,10 @@ h1 {
 
 /************ Header *************/
 header {
-  display: flex;
+ 
+}
+.header{
+   display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
