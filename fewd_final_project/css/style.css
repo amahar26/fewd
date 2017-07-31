@@ -70,7 +70,7 @@ nav ul {
   width:100%;
 }
 
-.work .container{overflow: scroll;}
+section.work{overflow: scroll;}
 
 
 .reveal-test{
