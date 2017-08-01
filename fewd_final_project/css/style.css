@@ -31,7 +31,7 @@ body{
   overflow: hidden;
 }
 body.active{
-   
+
 }
 
 .full-width {
@@ -75,7 +75,7 @@ nav ul {
   width:100%;
 }
 
-section.work{overflow: scroll;}
+section.work{overflow-y: scroll;  -webkit-overflow-scrolling: touch;}
 
 .work .container.full-width {
   display: flex;
