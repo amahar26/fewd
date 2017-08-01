@@ -28,7 +28,10 @@ section {
 }**/
 body{
   width:100vw;
-  overflow-x: hidden;
+  overflow: hidden;
+}
+body.active{
+   
 }
 
 .full-width {
@@ -76,7 +79,6 @@ section.work{overflow: scroll;}
 
 .work .container.full-width {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
 }
 .right-side{
@@ -105,3 +107,11 @@ section.work{overflow: scroll;}
 	visibility: hidden;
 	 perspective: 800px;
 }
+@media screen and (max-width: 700px) {
+
+  .work .container.full-width{
+    flex-wrap: wrap;
+  }
+}
+
+
