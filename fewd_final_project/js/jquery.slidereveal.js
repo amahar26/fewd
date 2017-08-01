@@ -51,7 +51,7 @@
 
       var transition = "all ease " + setting.speed + "ms";
       $el.css({
-        position: "relative",
+        position: "fixed",
         width: setting.width,
         transition: transition,
         height: "100%",

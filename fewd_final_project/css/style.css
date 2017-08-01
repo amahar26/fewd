@@ -20,6 +20,8 @@
   background: url('../imgs/page-loader.gif') 50% 50% no-repeat;
 }
 
+
+
 /********* Master Styles *****
 section {
   padding-bottom:500px;
@@ -72,6 +74,16 @@ nav ul {
 
 section.work{overflow: scroll;}
 
+.work .container.full-width {
+  display: flex;
+  justify-content: space-between;
+}
+.left-side{
+  width:50%;
+}
+.left-side img{
+  width: 100%;
+}
 
 .reveal-test{
 	height:200px;
