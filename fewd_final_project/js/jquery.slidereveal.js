@@ -35,7 +35,6 @@
       "zIndex": 1049,
       overlayColor: 'rgba(0,0,0,0.5)'
     };
-
     // Attributes
     this.setting = $.extend(setting, options);
     this.element = $el;
@@ -52,7 +51,7 @@
 
       var transition = "all ease " + setting.speed + "ms";
       $el.css({
-        position: "fixed",
+        position: "relative",
         width: setting.width,
         transition: transition,
         height: "100%",
