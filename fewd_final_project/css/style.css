@@ -76,8 +76,18 @@ section.work{overflow: scroll;}
 
 .work .container.full-width {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
+.right-side{
+  padding:0 2em;
+}
+
+.right-side p {
+  line-height: 2em;
+}
+
+
 .left-side{
   width:50%;
 }
