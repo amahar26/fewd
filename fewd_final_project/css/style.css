@@ -29,6 +29,7 @@ section {
 body{
   width:100vw;
   overflow: hidden;
+  height: 100vw;
 }
 body.active{
 
