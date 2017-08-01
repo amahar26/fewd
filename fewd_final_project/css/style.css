@@ -111,6 +111,9 @@ section.work{overflow-y: scroll;  -webkit-overflow-scrolling: touch;}
   .work .container.full-width{
     flex-wrap: wrap;
   }
+  .home .full-width {
+  padding: 0;
+  }
 }
 
 
