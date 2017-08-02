@@ -17,7 +17,7 @@ if(b.numberStep){var c=this.each(function(){this._animateNumberSetter=b.numberSt
 
 $('.sec2').click(function(){
 	//alert("working");
-	$("body").toggleClass("active");
+	//$("body").toggleClass("active");
 })
 $('.work').slideReveal({
   trigger: $(".sec2")
