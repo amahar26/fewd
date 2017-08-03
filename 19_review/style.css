@@ -1,0 +1,36 @@
+body {
+  padding: 24px;
+}
+
+main {
+  background: #ccc;
+  padding: 100px;
+  width: 500px;
+
+  position: relative;
+}
+
+.first {
+  color: white;
+  background: coral;
+
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+.second {
+  color: white;
+  background: midnightblue;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.third {
+  color: white;
+  background: forestgreen;
+
+  position: relative;
+  left: 100px;
+}
