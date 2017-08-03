@@ -57,6 +57,7 @@ header {
   align-items: center;
   flex-wrap: wrap;
   background: #fff none repeat scroll 0 0;
+  z-index: 999;
 
 }
 nav a {
