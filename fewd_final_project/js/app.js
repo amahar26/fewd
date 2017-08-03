@@ -15,6 +15,8 @@ if(b.numberStep){var c=this.each(function(){this._animateNumberSetter=b.numberSt
 // 	}
 // }, 1);
 
+$(".work").hide();
+
 $('.sec2').click(function(){
 	//alert("working");
 	//$("body").toggleClass("active");

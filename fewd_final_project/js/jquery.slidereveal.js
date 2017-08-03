@@ -26,11 +26,21 @@
       speed: 300, //ms
       trigger: undefined,
       autoEscape: true,
-      show: function(){},
-      shown: function(){},
-      hidden: function(){},
-      hide: function(){},
-      top: 200,
+      show: function(){
+        $(".work").show();
+
+      },
+      shown: function(){
+        
+      },
+      hidden: function(){
+       $(".work").hide();
+       
+      },
+      hide: function(){
+         
+      },
+      top: 0,
       overlay: false,
       "zIndex": 1049,
       overlayColor: 'rgba(0,0,0,0.5)'
@@ -51,7 +61,7 @@
 
       var transition = "all ease " + setting.speed + "ms";
       $el.css({
-        position: "fixed",
+        position: "relative ",
         width: setting.width,
         transition: transition,
         height: "100%",
