@@ -49,13 +49,16 @@ h1 {
 
 /************ Header *************/
 header {
+  background: #fff none repeat scroll 0 0;
   position: fixed;
   width: 100%;
+  z-index: 9999;
 }
 .header{
    display: flex;
   align-items: center;
   flex-wrap: wrap;
+  position: 
   background: #fff none repeat scroll 0 0;
   z-index: 999;
 
