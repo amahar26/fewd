@@ -86,7 +86,7 @@ nav ul {
 section.work{
   overflow-y: scroll;  
   -webkit-overflow-scrolling: touch;
-  position:relative;
+  position:absolute;
   top:10px;
 }
 
