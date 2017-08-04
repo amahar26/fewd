@@ -1,11 +1,13 @@
+
+
 .loader {
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  z-index: 9999;
-  background:#ffffff;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background:#ffffff;
 }
 
 .loader-img {
@@ -48,13 +50,14 @@ h1 {
 /************ Header *************/
 header {
   position: fixed;
-  width: 100%;
+  z-index: 999999;
+  background-color: #fff
 }
 .header{
    display: flex;
   align-items: center;
   flex-wrap: wrap;
-  
+
 }
 nav a {
   color: #555;
@@ -79,11 +82,16 @@ nav ul {
 section.work{
   overflow-y: scroll;  
   -webkit-overflow-scrolling: touch;
+  margin-top: 100px;
+}
+section{
+  position:fixed;
 }
 
 .work .container.full-width {
   display: flex;
   justify-content: space-between;
+
 }
 .right-side{
   padding:0 2em;
@@ -109,14 +117,14 @@ button {
 }
 
 .reveal-test{
-  height:200px;
-  max-width:700px;
-  margin: auto;
-  display: block;
-  width: 100%;
-  background: #000;
-  visibility: hidden;
-   perspective: 800px;
+	height:200px;
+	max-width:700px;
+	margin: auto;
+	display: block;
+	width: 100%;
+	background: #000;
+	visibility: hidden;
+	 perspective: 800px;
 }
 @media screen and (max-width: 700px) {
   .left-side{
@@ -132,3 +140,5 @@ button {
   padding: 0;
   }
 }
+
+
