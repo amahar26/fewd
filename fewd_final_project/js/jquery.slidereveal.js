@@ -28,19 +28,25 @@
       autoEscape: true,
       show: function(){
         $(".work").show();
-
+      // $(".work").css("top", "-115px");
+      //  $(".work").css("position", "fixed");
+      //  $(".work").css("top", "160px");
       },
       shown: function(){
-        
+       $(".work").css("position", "absolute");
+       //$(".work").css("top", "-115px");
       },
       hidden: function(){
-       
+       // $(".work").css("position", "fixed");
+      //  $(".work").css("top", "160px");
        $(".work").hide();
       },
       hide: function(){
-         
+        
+       //  $(".work").css("top", "160px"); 
+         $(".work").css("position", "fixed");
       },
-      top: 0,
+      top: "160px",
       overlay: false,
       "zIndex": 1049,
       overlayColor: 'rgba(0,0,0,0.5)'
@@ -76,7 +82,7 @@
         .hide()
         .css({
           position: 'relative',
-          top: 0,
+          top: 160,
           left: 0,
           height: '100%',
           width: '100%',
