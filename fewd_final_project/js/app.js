@@ -17,16 +17,19 @@ if(b.numberStep){var c=this.each(function(){this._animateNumberSetter=b.numberSt
 
 $(".work").hide();
 
-$('.sec2').click(function(){
-	//alert("working");
-	//$("body").toggleClass("active");
-})
+
+
 $('.work').slideReveal({
-  trigger: $(".sec2")
+  trigger: $(".trig")
   
 });
 
-
+$(".trig").click(function(){
+ // alert("working");
+ // $("body").toggleClass("active");
+  $(this).removeClass("trig");
+ // $(".sec1").addClass("sec2");
+});
 
 
 
