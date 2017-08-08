@@ -29,6 +29,12 @@ $(".link2").click(function(){
     $("section.contact").fadeOut(500);
     $(".link2").removeClass("active");
     $("body").removeClass("noscroll");
+    var homeOrWork = $(".trig a").html();
+	if (homeOrWork == "Work"){
+	$("section.home").fadeIn(500);     
+     }else{
+     	$("section.work").fadeIn(500);  
+     }  
   } else{
     $("section.contact").fadeIn(500);
     $(".link2").addClass("active");
