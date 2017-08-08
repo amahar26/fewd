@@ -35,9 +35,9 @@ $(".link2").click(function(){
     $("body").addClass("noscroll");
     var homeOrWork = $(".trig a").html();
  	if(homeOrWork == "Work"){
-	$("section.work").fadeOut(500);
+	$("section.work").hide(500);
 	}else{
-	$("section.home").fadeOut(500);
+	$("section.home").hide(500);
 	}
   }
  
