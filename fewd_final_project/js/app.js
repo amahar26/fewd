@@ -24,11 +24,23 @@ $('.work').slideReveal({
   
 });
 
-$('.link2').click(function(){
- $("section.contact").fadeIn(500);
- $("body").addClass("noscroll");
+$(".link2").click(function(){
+  if ($(".link2").hasClass("active")){
+    $("section.contact").fadeOut(500);
+    $(".link2").removeClass("active");
+    $("body").removeClass("noscroll");
+  } else{
+    $("section.contact").fadeIn(500);
+    $(".link2").addClass("active");
+    $("body").addClass("noscroll");
   
+  }
+ 
 });
+
+
+
+
 $(".trig").click(function(){
   var homeOrWork = $(".trig a").html();
  // console.log(homeOrWork);
@@ -36,10 +48,12 @@ $(".trig").click(function(){
     $(".trig a").html("About");
     $("section.contact").fadeOut(500);
     $("body").removeClass("noscroll");
+    $(".link2").removeClass("active");
   }else{
     $(".trig a").html("Work");
     $("section.contact").fadeOut(500);
     $("body").removeClass("noscroll");
+    $(".link2").removeClass("active");
   }
 });
 
@@ -52,6 +66,7 @@ $("#year").animateNumber({ number: 1985 }, 2000);
 sr.reveal('nav .link1', { duration: 1000, easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)'});
 sr.reveal('nav .link2', { duration: 1000, easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)', delay: 500});
 sr.reveal('nav .link3', { duration: 1000, easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)', delay: 1000 });
+
 sr.reveal('.work .scrllrvl1', { axis: 'x',
   origin: 'left',
   distance: '300px',
@@ -67,25 +82,6 @@ sr.reveal('.work .scrllrvl2', { axis: 'x',
   scale: '1',
   duration: '300',
   });
-
-$(".link1").click(function(){
-
-sr.reveal('.reveal-test', { axis: 'x',
-  origin: 'right',
-  distance: '500px',
-  easing   : 'ease-in-out',
-  scale: '1',
-  duration: '2000',
-  delay: '-300'})
-
-
-});
-
-
-
-
-
-console.log("loaded bro");
 
 
 
