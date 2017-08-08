@@ -33,7 +33,12 @@ $(".link2").click(function(){
     $("section.contact").fadeIn(500);
     $(".link2").addClass("active");
     $("body").addClass("noscroll");
-  
+    var homeOrWork = $(".trig a").html();
+ 	if(homeOrWork == "Work"){
+	$("section.work").fadeOut(500);
+	}else{
+	$("section.home").fadeOut(500);
+	}
   }
  
 });
@@ -54,6 +59,7 @@ $(".trig").click(function(){
     $("section.contact").fadeOut(500);
     $("body").removeClass("noscroll");
     $(".link2").removeClass("active");
+	
   }
 });
 
