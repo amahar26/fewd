@@ -16,8 +16,8 @@ if(b.numberStep){var c=this.each(function(){this._animateNumberSetter=b.numberSt
 // }, 1);
 
 $(".work").hide();
-$(".contact").hide();
-$(".social").hide();
+//$(".contact").hide();
+//$(".social").hide();
 
 
 $('.work').slideReveal({
