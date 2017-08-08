@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Amanda Harris Design Portfolio</title>
+	<title>Amanda Harris Design Portfolio | Home</title>
 	<link rel="stylesheet" href="./css/normalize.css">
 	<link rel="stylesheet" href="./css/style.css">
 	<meta name="viewport" content="width=device-width">
@@ -18,21 +18,36 @@
 			<a class="logo " href="#"><img src="./imgs/mg-logo.svg" alt="amanda harris design portfolo logo image" /></a>
 			<nav>
 				<ul>
-					<li class="sec1 trig"><a href="#">About</a></li>
-					<li class="sec2 trig"><a href="#">Work</a></li>
-					<li class="sec3"><a href="#">Contact</a></li>
+					<li class="link1 trig"><a href="#">Work</a></li>
+					<li class="link2"><a href="#">Contact</a></li>
+					<li class="link3"><a href="#">Resume</a></li>
 				</ul>	
 			</nav>
 		</div>	
 	</header>
-	<section class="home header--home">
+	<section class="home ">
 		<div class="full-width">
 			<h1>Making it look right since <span id="year">0</span>.</h1>
 			<!--<span id="counter-test"></span>-->
-			<p>My name is Amanda Harris I like to design things and make stuff work</p>
+			<h2>My name is Amanda Harris I like to design things and make stuff work</h2>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce iaculis bibendum orci, nec dictum arcu volutpat eu. Fusce dignissim sem ac ipsum tristique, eget tempus arcu egestas. Praesent cursus efficitur metus vitae lacinia. Ut nec diam ut lorem malesuada auctor et at magna. Sed aliquet rhoncus congue. Ut elementum libero odio, id pulvinar nisl placerat a. Aenean ut felis a sem eleifend congue.</p>
 		
 	
 		<!--<button id='trigger'>Trigger</button>-->
+		</div>	
+	</section>
+	<section class="contact">
+		<span class="overlay"></span>
+		<div class="full-width">
+			
+			<form>
+				<h1>Work with me</h1>
+				<input type="text" name="name" placeholder="name">
+				<input type="email" name="email" placeholder="email">
+				<textarea name="message" placeholder="hey amanda..." rows="2"></textarea>
+				<input type="submit" value="Submit">
+			</form>
 		</div>	
 	</section>
 	<section class="work">
@@ -44,10 +59,44 @@
 			<div class="right-side">
 				<h2>Lorem Ipsem</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit ex, pretium eget bibendum quis, feugiat eu leo. Nunc et sagittis ex. Quisque sit amet ante et mi sollicitudin ultricies eget in ante. Fusce convallis at mauris volutpat placerat. Aliquam erat volutpat. Phasellus at quam sollicitudin odio facilisis bibendum. Vestibulum egestas, nisi eu vehicula blandit, arcu felis pretium nisi, non hendrerit risus lacus a mauris.</p>
+
 				<button>View Project</button>
 			</div>
 		</div>
-		<div class="container full-width">
+		<div class="container scrllrvl1 full-width">
+
+			<div class="left-side">
+				<img src="./imgs/denise-bradley.png" alt="amanda harris design portfolo logo image" />
+			</div>
+			<div class="right-side">
+				<h2>Lorem Ipsem</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit ex, pretium eget bibendum quis, feugiat eu leo. Nunc et sagittis ex. Quisque sit amet ante et mi sollicitudin ultricies eget in ante. Fusce convallis at mauris volutpat placerat. Aliquam erat volutpat. Phasellus at quam sollicitudin odio facilisis bibendum. Vestibulum egestas, nisi eu vehicula blandit, arcu felis pretium nisi, non hendrerit risus lacus a mauris.</p>
+				<button>View Project</button>
+			</div>
+		</div>
+		<div class="container scrllrvl2 full-width">
+
+			<div class="left-side">
+				<img src="./imgs/denise-bradley.png" alt="amanda harris design portfolo logo image" />
+			</div>
+			<div class="right-side">
+				<h2>Lorem Ipsem</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit ex, pretium eget bibendum quis, feugiat eu leo. Nunc et sagittis ex. Quisque sit amet ante et mi sollicitudin ultricies eget in ante. Fusce convallis at mauris volutpat placerat. Aliquam erat volutpat. Phasellus at quam sollicitudin odio facilisis bibendum. Vestibulum egestas, nisi eu vehicula blandit, arcu felis pretium nisi, non hendrerit risus lacus a mauris.</p>
+				<button>View Project</button>
+			</div>
+		</div>
+		<div class="container scrllrvl1 full-width">
+
+			<div class="left-side">
+				<img src="./imgs/denise-bradley.png" alt="amanda harris design portfolo logo image" />
+			</div>
+			<div class="right-side">
+				<h2>Lorem Ipsem</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit ex, pretium eget bibendum quis, feugiat eu leo. Nunc et sagittis ex. Quisque sit amet ante et mi sollicitudin ultricies eget in ante. Fusce convallis at mauris volutpat placerat. Aliquam erat volutpat. Phasellus at quam sollicitudin odio facilisis bibendum. Vestibulum egestas, nisi eu vehicula blandit, arcu felis pretium nisi, non hendrerit risus lacus a mauris.</p>
+				<button>View Project</button>
+			</div>
+		</div>
+		<div class="container scrllrvl2 full-width">
 
 			<div class="left-side">
 				<img src="./imgs/denise-bradley.png" alt="amanda harris design portfolo logo image" />
@@ -67,10 +116,12 @@
 	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 
 	<script type="text/javascript">
+
 		$(document).ready(function() {
 			$(".loader").fadeOut(3000);
 			$(".loader-img").fadeOut(1000);
 			});
+	
 
 	</script>
 	<script src="./js/app.js"></script>

@@ -24,26 +24,51 @@ $('.work').slideReveal({
   
 });
 
+$('.link2').click(function(){
+ $("section.contact").fadeIn(500);
+ $("body").addClass("noscroll");
+  
+});
 $(".trig").click(function(){
- // alert("working");
- // $("body").toggleClass("active");
-  $(this).removeClass("trig");
- // $(".sec1").addClass("sec2");
+  var homeOrWork = $(".trig a").html();
+ // console.log(homeOrWork);
+  if (homeOrWork == "Work"){
+    $(".trig a").html("About");
+    $("section.contact").fadeOut(500);
+    $("body").removeClass("noscroll");
+  }else{
+    $(".trig a").html("Work");
+    $("section.contact").fadeOut(500);
+    $("body").removeClass("noscroll");
+  }
 });
 
 
 
 $("#year").animateNumber({ number: 1985 }, 2000);
 
+  window.sr = ScrollReveal();
 
-window.sr = ScrollReveal();
+sr.reveal('nav .link1', { duration: 1000, easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)'});
+sr.reveal('nav .link2', { duration: 1000, easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)', delay: 500});
+sr.reveal('nav .link3', { duration: 1000, easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)', delay: 1000 });
+sr.reveal('.work .scrllrvl1', { axis: 'x',
+  origin: 'left',
+  distance: '300px',
+  easing   : 'ease-in-out',
+  scale: '1',
+  duration: '300',
+  });
 
-sr.reveal('nav .sec1', { duration: 1000, easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)'});
-sr.reveal('nav .sec2', { duration: 1000, easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)', delay: 500});
-sr.reveal('nav .sec3', { duration: 1000, easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)', delay: 1000 });
+sr.reveal('.work .scrllrvl2', { axis: 'x',
+  origin: 'right',
+  distance: '300px',
+  easing   : 'ease-in-out',
+  scale: '1',
+  duration: '300',
+  });
 
-
-$(".sec1").click(function(){
+$(".link1").click(function(){
 
 sr.reveal('.reveal-test', { axis: 'x',
   origin: 'right',
@@ -57,11 +82,10 @@ sr.reveal('.reveal-test', { axis: 'x',
 });
 
 
-//$("#trigger").click(function(){});
+
 
 
 console.log("loaded bro");
-
 
 
 
