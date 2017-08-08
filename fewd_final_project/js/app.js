@@ -67,7 +67,37 @@ sr.reveal('nav .link1', { duration: 1000, easing: 'cubic-bezier(0.6, 0.2, 0.1, 1
 sr.reveal('nav .link2', { duration: 1000, easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)', delay: 500});
 sr.reveal('nav .link3', { duration: 1000, easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)', delay: 1000 });
 
-sr.reveal('.work .scrllrvl1', { axis: 'x',
+
+
+
+
+$(document).ready(function() {
+    // Optimalisation: Store the references outside the event handler:
+    var $window = $(window);
+
+
+    function checkWidth() {
+        var windowsize = $window.width();
+        if (windowsize < 700) {
+            //if the window is less than 700px wide ..
+          sr.reveal('.work .scrll .left-side', { axis: 'x',
+  origin: 'bottom',
+  distance: '200px',
+  easing   : 'ease-in-out',
+  scale: '1',
+  duration: '300',
+  });
+            sr.reveal('.work .scrll .right-side', { axis: 'x',
+  origin: 'bottom',
+  distance: '200px',
+  easing   : 'ease-in-out',
+  scale: '1',
+  duration: '300',
+  });
+     
+        }else{
+
+          sr.reveal('.work .scrllrvl1', { axis: 'x',
   origin: 'left',
   distance: '300px',
   easing   : 'ease-in-out',
@@ -75,7 +105,7 @@ sr.reveal('.work .scrllrvl1', { axis: 'x',
   duration: '300',
   });
 
-sr.reveal('.work .scrllrvl2', { axis: 'x',
+          sr.reveal('.work .scrllrvl2', { axis: 'x',
   origin: 'right',
   distance: '300px',
   easing   : 'ease-in-out',
@@ -83,8 +113,13 @@ sr.reveal('.work .scrllrvl2', { axis: 'x',
   duration: '300',
   });
 
-
-
+        }
+    }
+    // Execute on load
+    checkWidth();
+    // Bind event listener
+    $(window).resize(checkWidth);
+});
 
 		
 		

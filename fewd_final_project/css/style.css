@@ -67,7 +67,7 @@ nav a {
   color: #000;
   text-decoration: none;
   text-transform: uppercase;
-  font-weight:400;
+  font-weight:100;
 }
 
 nav ul {
@@ -89,7 +89,7 @@ nav ul {
 }
 
 .home h2 {
-
+  line-height: 1.5em;
   margin:0 .1em 1em;
   }
 
@@ -135,6 +135,11 @@ button:focus{
 }
 
 /*****Contact Styles*******/
+
+.link2.active{
+  border-bottom:1px solid #000;
+}
+
 
 section.contact{
   position: absolute;
@@ -186,7 +191,23 @@ input[type="submit"] {
     margin-top: 3em;
     }
 
-
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #000;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #000;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #000;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #000;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #000;
+}
 textarea { 
   resize: vertical;
   clear:both; }
@@ -200,9 +221,22 @@ textarea:focus, input:focus{
   .left-side{
   width:100%;
 }
+.right-side{
+  padding:0;
+  margin-top: -7em;
+}
   .work .container.full-width{
     flex-wrap: wrap;
   }
+     button {
+  display: block;
+  margin: 1em auto 6em;
+  width:100%;
+ }
+ 
+  
+
+}
   .header.full-width {
   padding: 20px 0 0;
 }
@@ -210,5 +244,4 @@ textarea:focus, input:focus{
   padding: 1em 0 0;
   }
 }
-
 
