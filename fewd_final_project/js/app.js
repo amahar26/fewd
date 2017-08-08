@@ -54,11 +54,12 @@ $(".trig").click(function(){
     $(".trig a").html("About");
     $("section.contact").fadeOut(500);
     $("section.work").fadeIn(500); 
+     $("section.home").show(); 
     $(".link2").removeClass("active");
   }else{
     $(".trig a").html("Work");
     $("section.contact").fadeOut(500);
-    $("section.home").fadeIn(500); 
+    $("section.home").show(); 
     $(".link2").removeClass("active");
 	
   }
