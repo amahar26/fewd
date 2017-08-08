@@ -189,7 +189,7 @@ input[type="submit"] {
     padding: 10px 30px;
     max-width: 150px;
     margin-top: 3em;
-    border-radius:none;
+    border-radius:0;
     }
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
