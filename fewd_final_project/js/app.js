@@ -37,12 +37,9 @@ $(".link2").click(function(){
   } else{
     $("section.contact").fadeIn(500);
     $(".link2").addClass("active");
-     var homeOrWork = $(".trig a").html();
-     if (homeOrWork == "Work"){
-	$("section.home").fadeOut(500);     
-     }else{
-     	$("section.work").fadeOut(500);  
-     }
+    $("section.home").fadeOut(500);     
+   $("section.work").fadeOut(500);  
+     
   }
  
 });
@@ -56,12 +53,12 @@ $(".trig").click(function(){
   if (homeOrWork == "Work"){
     $(".trig a").html("About");
     $("section.contact").fadeOut(500);
-    $("section.work").show(500); 
+    $("section.work").fadeIn(500); 
     $(".link2").removeClass("active");
   }else{
     $(".trig a").html("Work");
     $("section.contact").fadeOut(500);
-    $("section.home").show(500); 
+    $("section.home").fadeIn(500); 
     $(".link2").removeClass("active");
 	
   }
