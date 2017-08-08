@@ -79,39 +79,30 @@ $(document).ready(function() {
     function checkWidth() {
         var windowsize = $window.width();
         if (windowsize < 700) {
+		
             //if the window is less than 700px wide ..
-          sr.reveal('.work .scrll .left-side', { axis: 'x',
-  origin: 'bottom',
-  distance: '200px',
-  easing   : 'ease-in-out',
-  scale: '1',
-  duration: '300',
-  });
-            sr.reveal('.work .scrll .right-side', { axis: 'x',
-  origin: 'bottom',
-  distance: '200px',
-  easing   : 'ease-in-out',
-  scale: '1',
-  duration: '300',
-  });
+		
+          sr.reveal('.work .scrll .left-side', { 
+		 axis: 'x', origin: 'bottom', distance: '200px',
+ 		  easing: 'ease-in-out', scale: '1', duration: '300',
+ 		 });
+		
+            sr.reveal('.work .scrll .right-side', { 
+		    axis: 'x', origin: 'bottom', distance: '200px',
+  		    easing   : 'ease-in-out', scale: '1', duration: '300',
+  		});
      
         }else{
 
-          sr.reveal('.work .scrllrvl1', { axis: 'x',
-  origin: 'left',
-  distance: '300px',
-  easing   : 'ease-in-out',
-  scale: '1',
-  duration: '300',
-  });
+          sr.reveal('.work .scrllrvl1', { 
+		  axis: 'x', origin: 'left', distance: '300px',
+ 		 easing: 'ease-in-out', scale: '1', duration: '300',
+  		});
 
-          sr.reveal('.work .scrllrvl2', { axis: 'x',
-  origin: 'right',
-  distance: '300px',
-  easing   : 'ease-in-out',
-  scale: '1',
-  duration: '300',
-  });
+          sr.reveal('.work .scrllrvl2', { 
+		  axis: 'x', origin: 'right', distance: '300px',
+ 		 easing:'ease-in-out', scale: '1', duration: '300',
+ 		 });
 
         }
     }
