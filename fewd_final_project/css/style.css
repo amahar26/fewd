@@ -221,6 +221,10 @@ textarea:focus, input:focus{
 /*****Media Queries*******/
 
 @media screen and (max-width: 700px) {
+	
+	.home p{
+	display:none
+	}	
   .left-side{
   width:100%;
 }
