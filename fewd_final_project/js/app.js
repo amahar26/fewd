@@ -42,7 +42,7 @@ $(".link2").click(function(){
     $("section.contact").fadeIn(500);
     $(".link2").addClass("active");
     $("section.home").fadeOut(500);     
-    
+    $("section.work").fadeOut(500); 
      
   }
  
@@ -64,6 +64,7 @@ $(".trig").click(function(){
     $(".trig a").html("Work");
     $("section.contact").fadeOut(500);
     $("section.home").fadeIn(500); 
+    
     $(".link2").removeClass("active");
 	
   }
