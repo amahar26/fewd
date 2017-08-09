@@ -32,8 +32,8 @@ body.noscroll{
 }
 
 canvas {
-  position: absolute;
-  opacity:.5;
+  position: fixed;
+  opacity:.9;
 }
 .full-width {
   padding: 4em 1em;
