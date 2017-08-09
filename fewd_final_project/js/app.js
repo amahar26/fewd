@@ -32,15 +32,17 @@ $(".link2").click(function(){
     $(".link2").removeClass("active");
     var homeOrWork = $(".trig a").html();
 	if (homeOrWork == "Work"){
-	$("section.home").fadeIn(500);     
+	$("section.home").fadeIn(500); 
+		
      }else{
      	$("section.work").fadeIn(500);  
+	$("section.home").fadeIn(500);
      }  
   } else{
     $("section.contact").fadeIn(500);
     $(".link2").addClass("active");
     $("section.home").fadeOut(500);     
-   $("section.work").fadeOut(500);  
+    
      
   }
  
@@ -56,12 +58,12 @@ $(".trig").click(function(){
     $(".trig a").html("About");
     $("section.contact").fadeOut(500);
     $("section.work").fadeIn(500); 
-     $("section.home").show(); 
+     $("section.home").fadeIn(500);
     $(".link2").removeClass("active");
   }else{
     $(".trig a").html("Work");
     $("section.contact").fadeOut(500);
-    $("section.home").show(); 
+    $("section.home").fadeIn(500); 
     $(".link2").removeClass("active");
 	
   }
