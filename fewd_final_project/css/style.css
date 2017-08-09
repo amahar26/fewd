@@ -58,7 +58,6 @@ h1 {
 header {
   position: fixed;
   z-index: 9999;
-  background-color: #fff;
   width: 100%;
 }
 .header{
