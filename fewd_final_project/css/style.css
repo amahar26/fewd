@@ -122,7 +122,7 @@ nav ul {
   width: 100%;
 }
 
-button {
+.button {
   background: #555 none repeat scroll 0 0;
   border: medium none;
   color: #fff;
