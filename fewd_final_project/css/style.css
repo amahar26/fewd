@@ -126,7 +126,6 @@ nav ul {
   background: #555 none repeat scroll 0 0;
   border: medium none;
   color: #fff;
-  margin: 2em 0;
   padding: 10px 30px;
   display: block;
   max-width: 92px;
@@ -252,9 +251,7 @@ textarea:focus, input:focus{
     flex-wrap: wrap;
   }
      .button {
-  display: block;
-  margin: 1em auto 6em;
-  width:100%;
+  margin: 0 0 2em;
  }
  
 
