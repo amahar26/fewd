@@ -128,8 +128,8 @@ nav ul {
   color: #fff;
   margin: 2em 0;
   padding: 10px 30px;
-  position:relative;
-  top:20px;
+  display: block;
+  max-width: 92px;
   text-decoration: none;
 }
 button:focus{
@@ -251,7 +251,7 @@ textarea:focus, input:focus{
   .work .container.full-width{
     flex-wrap: wrap;
   }
-     button {
+     .button {
   display: block;
   margin: 1em auto 6em;
   width:100%;
